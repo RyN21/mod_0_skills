@@ -1,0 +1,15 @@
+Class : Inventory
+
+attributes:
+- item_description (string)
+- item_quantity (integer)
+- on_hand_items (boolean)
+- item_list (array)
+- order_list (array)
+
+methods
+- assign_item_description (changes item_description attribute)
+- receive_item (changes item quantity attribute and item list attribute)
+- sell_item (changes item quantity attribute and item list attribute)
+- whats_in_stock (defines if the food attribute is true or false)
+- order_items (changes order list attribute)
