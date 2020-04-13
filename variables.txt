@@ -1,0 +1,9 @@
+food = "rice"
+is_delicious = true
+food = "grapes"
+num2 = 2
+num7 = 21
+quotient = num7 / num2
+songs = ["song1", "song2", "song3", "song4"]
+puts songs.shift
+puts food.length 
