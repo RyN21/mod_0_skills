@@ -1,0 +1,15 @@
+Class : menu
+attribute:
+- food_items (string)
+- drink_items (string)
+- price (float)
+- dessert_items (string)
+- restaurant_name (string)
+
+methods:
+- provide_food_info (shows customers food_items)
+- provide_drink_menu (shows customers drink_items)
+- set_price (changes price attribute)
+- add_food_to_menu (changes food_item attribute)
+- add_drink_to_menu (changes drink_items attribute)
+- change_restaurant_name (changes restaurant_name attribute)
