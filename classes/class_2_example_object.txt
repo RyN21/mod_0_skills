@@ -1,0 +1,35 @@
+Object: RICE
+
+attributes:
+- item_description
+(RICE)
+
+- item_quantity
+(21 pounds)
+
+- on_hand_items
+(true)
+
+- item_list
+(RICE is on FOOD_LIST)
+
+- order_list
+(chicken, RICE, beans, carrots)
+
+
+
+methods
+- assign_item_description (changes item_description attribute)
+Describes the nutrient facts about rice
+
+- receive_item (changes item quantity attribute and item list attribute)
+Rice is delivered and added to the quantity
+
+- sell_item (changes item quantity attribute and item list attribute)
+Rice quantity gets smaller
+
+- whats_in_stock (defines if the food attribute is true or false)
+There is rice in stock, but it is getting low.
+
+- order_items (changes order list attribute)
+Rice is added to the order list based on low inventory
