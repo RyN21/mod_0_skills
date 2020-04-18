@@ -1,15 +1,15 @@
-Class : Inventory
+Class : Cash Register
 
 attributes:
-- item_description (string)
-- item_quantity (integer)
-- on_hand_items (boolean)
-- item_list (array)
-- order_list (array)
+- model type (string)
+- color (string)
+- full display (boolean)
+- card reader (boolean)
+- register drawer (boolean)
+- calculator (float)
 
 methods
-- assign_item_description (changes item_description attribute)
-- receive_item (changes item quantity attribute and item list attribute)
-- sell_item (changes item quantity attribute and item list attribute)
-- whats_in_stock (defines if the food attribute is true or false)
-- order_items (changes order list attribute)
+- reads_card
+- display_price
+- calculate_change
+- opens_drawer

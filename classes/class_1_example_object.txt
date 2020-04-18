@@ -1,28 +1,34 @@
-Menu
+Village Inn Menu
 
 
 attributes
-food_items: breakfast foods, lunch foods, dinner foods
-drink_items: coffee, OJ, soda, milk
+food_items: ["pancakes", "waffles", "eggs"]
+drink_items: ["coffee", "OJ", "soda", "milk"]
 price: food $9.99, drinks $2.99, pie 5.99
-dessert_items: pie
-restaurant_name: Village Inn
+dessert_items: ["pie", "cake"]
+restaurant_name: "Village Inn"
 
 
-provide_food_info (shows customers food_items)
-- food list presented to customers
+provide_food_info
+- Shows breakfast items listed in menu.
+-["pancakes", "waffles", "eggs"]
 
-provide_drink_menu (shows customers drink_items)
-- drink menu presented to customer
+provide_drink_menu
+- Shows drink items listed in menu
+-["coffee", "OJ", "soda", "milk"]
 
 set_price (changes price attribute)
 - Holiday sale on pies. Now only $3.99
+- price = 3.99
 
 add_food_to_menu (changes food_item attribute)
 - New holiday pancakes, limited time item
+- ["pancakes", "holiday pancakes", "waffles", "eggs"]
 
 add_drink_to_menu (changes drink_items attribute)
 - New holiday eggnog added to the menu
+- ["coffee", "OJ", "soda", "milk", "eggnog"]
 
 change_restaurant_name (changes restaurant_name attribute)
 - Village Inn is bought by Denny's, name changes
+- "Denny's"

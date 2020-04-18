@@ -1,35 +1,34 @@
-Object: RICE
+Object: Register Model 2000
 
 attributes:
-- item_description
-(RICE)
+- model type ( "Register Model 2000" )
 
-- item_quantity
-(21 pounds)
+- color ( "black" )
 
-- on_hand_items
-(true)
+- full display ( true ) Model 2000's register does come with a full display
 
-- item_list
-(RICE is on FOOD_LIST)
+- card reader ( true )
 
-- order_list
-(chicken, RICE, beans, carrots)
+- register drawer ( true )
 
+- calculator ( 100 - 93.55 = 6.45 )
 
 
 methods
-- assign_item_description (changes item_description attribute)
-Describes the nutrient facts about rice
 
-- receive_item (changes item quantity attribute and item list attribute)
-Rice is delivered and added to the quantity
+- reads_card (uses the card reader attribute)
+if magnetic strip is valid && card has sufficient funds
+  accept payment
 
-- sell_item (changes item quantity attribute and item list attribute)
-Rice quantity gets smaller
+- display_price (uses full display attribute and calculator attribute)
+adds all items price
+total price = $93.55
 
-- whats_in_stock (defines if the food attribute is true or false)
-There is rice in stock, but it is getting low.
+- calculate_change (uses the calculator attribute)
+Total = $93.55
+Customer pays with $100 bill
+Change = $6.45
 
-- order_items (changes order list attribute)
-Rice is added to the order list based on low inventory
+- opens_drawer (uses register drawer attribute)
+If customer give cash || change is due to customer
+  open drawer
