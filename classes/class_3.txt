@@ -4,41 +4,58 @@ Attributes:
 - name (string)
 - breed (string)
 - age (integer)
-- home (sting)
+- favorite_food (sting)
+- favorite_toy (string)
+- hungry (boolean)
 
 Methods:
 - bark
 - walk
-- run
+- play
 - eat
 
-Object: Spot
-name: "spot"
+Object:
+name: "Spot"
 breed: "wire haired griff"
 age: 4
-home: "Denver"
+favorite_food: "chicken"
+favorite_toy: "tennis ball"
 
-Methods:
-def bark
-  if #{name} is told to speak
-    retrurn "arf!"
+
+class Dog
+  def initialize(name, breed, age, favorite_food, favorite_toy)
+    @name = name
+    @breed = breed
+    @age = age
+    @favorite_food = favorite_food
+    @favorite_toy = favorite_toy
+    @hungry = true
+
+  end
+
+  def bark
+    if #{name} is told to speak
+      return "arf!"
+    end
+  end
+
+  def walk
+    if #{name} has his leash
+      return "go for a walk"
+    end
+  end
+
+  def play
+    if #{name}'s pulls out the #{favorite_toy}
+      return "time to play with the #{favorite_toy}!"
+    end
+  end
+
+  def eat
+    if hungry = true
+      puts "time to eat #{favorite_food}!"
+    end
   end
 end
 
-def walk
-  if #{name} has his leash
-    return "go for a walk"
-  end
-end
-
-def run
-  if a ball is thrown
-    return "run!"
-  end
-end
-
-def eat
-  if #{name} is hungry
-    puts "time to eat!"
-  end
-end
+spot = Dog.new("Spot", "wire haired griff", 4, "chicken", "tennis ball")
