@@ -1,0 +1,44 @@
+Class Dog
+
+Attributes:
+- name (string)
+- breed (string)
+- age (integer)
+- home (sting)
+
+Methods:
+- bark
+- walk
+- run
+- eat
+
+Object: Spot
+name: "spot"
+breed: "wire haired griff"
+age: 4
+home: "Denver"
+
+Methods:
+def bark
+  if #{name} is told to speak
+    retrurn "arf!"
+  end
+end
+
+def walk
+  if #{name} has his leash
+    return "go for a walk"
+  end
+end
+
+def run
+  if a ball is thrown
+    return "run!"
+  end
+end
+
+def eat
+  if #{name} is hungry
+    puts "time to eat!"
+  end
+end
